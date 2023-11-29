@@ -8,7 +8,7 @@ tokenizer = AutoTokenizer.from_pretrained('nlptown/bert-base-multilingual-uncase
 
 model = AutoModelForSequenceClassification.from_pretrained('nlptown/bert-base-multilingual-uncased-sentiment')
 
-file_path = 'Negative_review_data.txt'
+file_path = 'tricky_review_test.txt'
 max_length = 512
 with open(file_path, 'r', encoding='utf-8') as file:
     text = file.read()
