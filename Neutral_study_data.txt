@@ -1,0 +1,609 @@
+Physics of nonhermitian degeneracies ∗)
+M.V. Berry ∗∗)
+H.H. Wills Physics Laboratory, Tyndall Avenue, Bristol BS8 1TL, UK
+Received 1 July 2004
+A summary, with references and additional comments, of a talk delivered at the Second
+International Workshop on Pseudohermitian Hamiltonians in Quantum Physics (Prague,
+14–16 June 2004). After explaining some general features of nonhermitian degeneracies
+(‘exceptional points’), several applications are outlined: to multiple reflections in a pile of
+plates, linewidths of unstable lasers, atom diffraction by light, and crystal optics.
+PACS: 03.65.Yz
+Key words: matrices, degeneracies, quantum
+1 Introduction
+Nonhermitian hamiltonians usually enter physics as a description of part of a
+system, as a result of a decision not to incorporate all freedoms — for example
+those describing dissipation. Examples are complex refractive indices in optics, and
+complex potentials describing the scattering of electrons or X-rays, or by nuclei
+(‘cloudy crystal ball’). Traditionally, the nonhermiticity has been regarded as a
+perturbation, with the physics essentially unchanged from the hermitian case, except for an exponential decay (for example during propagation through a crystal).
+But nonhermitian physics differs radically from hermitian physics in the presence
+of degeneracies, that is coalescences of eigenvalues. My aim here is to illustrate this
+essentially nonhermitian behaviour with a series of examples, drawn from several
+areas of physics, that I have encountered over the past decade (Sections 3–7), after
+some general remarks (Section 2).
+Professor Dieter Heiss and his colleagues have arrived at similar insights, and
+this paper can be regarded as complementary to his [1]. A minor difference, of no
+physical consequence, is that Heiss uses the term ‘exceptional points’, introduced
+in an authoritative work by Kato [2] to denote what I call nonhermitian degeneracies. My opinion is that the term degeneracy is appropriate because it is well
+established in mathematics as a label for any type of coalescence. Its applicability
+to the nonhermitian case is further strengthened by the observation that here it is
+not only the eigenvalues but also the eigenvectors that coalesce.
+The examples I will give reflect my interests, so there is no attempt to be
+comprehensive. And since all the work has been published already, I restrict myself
+to a brief description of each case.
+∗) Presented at the Second International Workshop on Pseudohermitian Hamiltonians in Quantum Physics, Prague, Czech Republic, 14–16 June, 2004.
+∗∗) http://www.physics.bristol.ac.uk/staff/berry mv.html
+Czechoslovak Journal of Physics, Vol. 54 (2004), No. 10 1039
+M.V. Berry
+2 Hermitian and nonhermitian generalities
+The emphasis here is on degeneracies involving two states, and on generic situations, that is situations that are stable under perturbation. Therefore we are
+considering not individual degenerate matrices but families of such matrices, parameterised by several variables. With this understanding, the differences between
+hermitian and nonhermitian degeneracies can be summarised as follows.
+For hermitian matrices that are real symmetric (commonly describing nondissipative physics with time-reversal symmetry), degeneracies are of codimension two,
+that is, degeneracies are isolated points in a two-parameter space, robust in the
+sense that when additional parameters are varied, preserving the real symmetric
+character of the matrix, they are not destroyed but simply move. In the threedimensional space of eigenvalue and two parameters, the eigenvalue surfaces form a
+double cone (diabolo)with apex at the degeneracy; such degeneracies are referred
+to as ‘conical intersections’ or ‘diabolical points’ [3].
+For complex hermitian matrices (commonly describing nondissipative physics
+without time-reversal or other antiunitary symmetry), degeneracies are of codimension three, that is isolated points in a three-parameter space, robust against
+any hermitian perturbation.
+After a circuit in the parameter space (either surrounding a degeneracy in the
+real symmetric case or near a point of degeneracy on the complex hermitian case),
+each of the two eigenfunctions returns to its original form, apart from a phase shift
+that depends on the (physically or mathematically enforced)continuation rule (e.g.
+a geometric phase [4, 5] if the rule is parallel transport). Approaching the degeneracy, the two eigenvectors remain orthogonal. The left eigenvector (eigenvector of
+the adjoint — i.e. hermitian conjugate — matrix)is identical to the corresponding
+right eigenvector.
+For nonhermitian matrices, whether symmetric or not, degeneracies are of codimension two, that is points in a two-parameter space and curves in a three-parameter
+space. These nonhermitian degeneracies are not diabolical points but rather branchpoints, with associated Riemann sheets: around a circuit encircling the degeneracy,
+the eigenvalues, and the corresponding eigenvectors, interchange. If the nonhermitian matrix is a perturbation of a real symmetric matrix, and the parameter space
+is a plane, the perturbation splits the diabolical point into two branch-point degeneracies. If the nonhermitian matrix is a perturbation of a complex hermitian matrix,
+and the parameter space is three-dimensional, the perturbation makes the isolated
+hermitian degeneracy point explode into a ring of branch-point degeneracies. A
+general model for these eigenvalue phenomena is
+M =
+ z x − iy
+x + iy −z
+
++ i  z0 x0 − iy0
+x0 + iy0 −z0
+
+, (1)
+where r = {x, y, z} is the three-dimensional parameter space of the hermitian
+part of M, and r0 = {x0, y0, z0} characterises the nonhermitian perturbation. The
+1040 Czech. J. Phys. 54 (2004)
+Physics of nonhermitian degeneracies
+eigenvalues are
+λ = (r + ir0) · (r + ir0) = 
+r2 − r2
+0 + 2i r · r0 , (2)
+showing that the perturbation splits the degeneracy, defined by λ+ = λ− (= 0 in
+this traceless case)from the isolated hermitian point degeneracy at r = 0 to a ring
+of branch-points with radius r0 in the plane perpendicular to r0. Nonhermitian
+degeneracies are stable against any perturbations, hermitian or nonhermitian.
+The branch-point nature of a nonhermitian degeneracy has implications: since
+the eigenvectors interchange around a circuit of the nonhermitian degeneracy, two
+circuits are required to make the states return, apart from an overall phase that
+again depends on the continuation rule (in a recent experiment [6] the continuation
+was a sign, so four circuits were necessary to make both states return, including
+phases). Also, on approaching a nonhermitian degeneracy, the two states involved
+in the degeneracy become parallel rather than remaining orthogonal as in the hermitian case (though of course the two left and the two right eigenvectors form a
+biorthogonal set). Finally, the left and right eigenvectors become orthogonal at the
+degeneracy, rather than remaining parallel as in the hermitian case.
+3 Nonhermitian nonphysics of a pile of plates [7]
+Every physicist has probably noticed that a pile of N overhead-projector transparency sheets looks more and more like a mirror as N increases. The first serious
+attempt at a theory of such ‘transparent mirrors’ was by Stokes [8], who calculated all the multiple reflections of light from the plates. (Stokes had observed the
+phenomenon in piles of cover slips for microscope slides). In modern terminology,
+he argued that because the sheets, and spaces between them, are large compared
+with the wavelength, wave effects can be neglected, so it is sufficient to work with
+incoherent reflections and transmissions of intensity rather than amplitude.
+If the intensity transmission and reflection coefficients from a single sheet are
+τ and ρ, with τ + ρ = 1 since there is no loss, the matrix giving the forward- and
+backward-propagating intensities after the n-th sheet, in terms of the intensities
+immediately before, is
+m =
+ 1 0
+0 1
++ ρ
+τ
+ −1 1
+−1 1
+. (3)
+This is a real nonsymmetric matrix and therefore nonhermitian, with degenerate
+eigenvalues 1. The matrix governing the whole pile is mN . Usually the elements
+of such a matrix power grow exponentially with N, which would imply that the
+transmission would decrease exponentially with N, so the reflection — the mirroring
+— would saturate exponentially to unity. But for this nonhermitian degenerate m,
+the result
+
+
+
+
+−1 1
+−1 1
+
+
+
+
+2
+=
+
+
+
+
+0 0
+0 0
+
+
+
+
+(4)
+Czech. J. Phys. 54 (2004) 1041
+M.V. Berry
+implies
+mN =
+ 1 0
+0 1
++ N ρ
+τ
+ −1 1
+−1 1
+, (5)
+which in turn implies that the transmitted intensity TN decays linearly with N,
+rather than exponentially:
+TN = 1
+1 + N ρ
+τ
+. (6)
+This seems to imply a physical effect of a nonhermitian degeneracy representing
+a system without absorption. But it is wrong! Coherence of the multiple reflections
+cannot be neglected, because there can be topologically distinct scattering paths
+that pass through the same spaces and sheets (though in a different order). In fact,
+the coherent interference is destructive, and appropriate averaging over the random
+air gaps between the sheets leads to the exact result
+TN  = τN = exp 
+−N log 1
+τ
+ . (7)
+This exponential mirroring is an unexpected example of Anderson localization (destructive random interference). Experiments with stacks of 30 and 50 sheets confirmed this law, rather than Stokes’s linear mirroring. In this example, nonhermitian
+physics is nonphysics.
+4 Linewidths of unstable lasers [9]
+In laser pointers, and small demonstration lasers, the cavities consist of two
+mirrors that are concave towards each other. These are stable lasers, whose modes,
+that are eigenfunctions of the unitary round-trip wave operator (two propagations
+and two reflections), have the familiar gaussian transverse profile, localised near
+the optical symmetry axis.
+Powerful lasers, on the other hand, are unstable: one of the mirrors is reversed,
+so light leaks away from the edges. The advantage of the instability is that now
+the cavity is filled with light, so all the lasing material is used. A fundamental
+consequence of the leaking is that the round-trip operator T for the light that
+forms the mode is nonunitary: it is the exponential of a nonhermitian operator. An
+explicit expression for the operator in the simplest case (a ‘strip resonator’)is [10]
+Tu(x) = 
+A
+2γiM
+	
+1
+−1
+dy exp
+1
+2 iA
+
+
+y − x
+M
+2
+
+u(y) = γu(x). (8)
+Here u(x)is the mode, with δ the complex propagation constant with |γ| < 1; x
+is a transverse coordinate whose limits ±1 correspond to the edges of the mirror
+beyond which the light leaks away (if the limits are replaced by ±∞, T is unitary).
+M (> 1)is the magnification (ratio of focal lengths of the mirrors); the parameter A
+1042 Czech. J. Phys. 54 (2004)
+Physics of nonhermitian degeneracies
+is the important Fresnel number, inversely proportional to the wavelength; usually
+A 
+ 1.
+The eigenfunctions u of (8)are very different from the familiar gaussian beams
+of stable lasers. In particular, the graph of the intensity |u(x)|
+2 are fractal [11–13], as
+suggested by experiment [14]. In the present context, the important nonhermitian
+(=nonunitary here)physics arises from the fact that the right eigenvectors u(x)are
+different from the corresponding left eigenvectors ν(x)(which are the eigenvectors
+of T† rather than T); in particular, the overlap
+ν|u =
+	
+1
+−1
+dx ν∗(x)u(x)(9)
+of the normalised u and ν is less than unity. The importance of this is that the
+overlap determines the laser linewidth through the Petermann factor
+K = 1
+|ν|u|2 , (10)
+by which the minimum linewidth (governed by quantum optics)is magnified by the
+nonunitarity.
+Nonunitarity implies K > 1. Computations of K as a function of A had shown
+strong peaks. These were explained by the observation that at a nonhermitian
+degeneracy u and v are orthogonal, so K = ∞. Since nonhermitian degeneracies
+have codimension 2, this situation (bad for the operation of the laser)does not
+usually happen for real A. But it is expected for complex A, and K is large for
+degeneracies near the real axis in the complex A plane. As a function of Re A, K
+displays an unusual ‘square root of Lorentzian’ lineshape, reflecting its origin in
+a degeneracy of resonances rather than an individual resonance. (By changing M
+as well, degeneracies can be steered onto the real A axis, making K = ∞ for this
+special case.)
+A large-A asymptotic theory for the operator (8)gives a detailed description of
+the arrangement of the degeneracies, in particular their proximity to the real A axis.
+All details of the theory agree with numerical simulations based on discretization
+of the intergal operator (8), but await investigation in laboratory experiments.
+5 Atoms diffracted by imaginary crystals of light [15]
+Interfering laser beams can create a ‘crystal of light’ that splits a beam of incident atoms into a set of Bragg-diffracted beams. The atoms are represented by an
+amplitude satisfying Schr¨odinger’s equation, with a periodic potential proportional
+to the light intensity. The interaction involves the laser frequency and relevant
+transition frequencies in the atoms. For appropriate detuning, the potential can be
+complex, indicating incoherent loss of atoms to levels not involved in the diffraction,
+and a nonhermitian evolution operator. Experiments by Zeilinger and colleagues
+Czech. J. Phys. 54 (2004) 1043
+M.V. Berry
+[16] correspond to the extreme situation where the potential is purely imaginary,
+described in the simplest case by a Schr¨odinger equation
+−∇2ψ(x, z)+iQ cos2(Kx)ψ(x, z) = k2ψ(x, z), (11)
+involving a volume grating extending from z = 0 to z = Z.
+For an incident plane wave with wavevector k = (K0,
+k2 − K2
+0 ), the amplitudes An(Z)of the nth emerging diffracted beam satisfy, in the paraxial approximation, the differential-difference equation
+ik∂ZAn(Z) = [2n(nK + K0) − 1
+4 iQ]An(Z) − 1
+8 iQ[An+1(Z) + An−1(Z)] , (12)
+with An(0)= δn,0. Nonhermiticity is embodied in the factors i on the righthand
+side and has interesting physical effects.
+Nonhermitian degeneracies powerfully influence the ‘rocking curves’, that is the
+dependence of the An(Z)on the initial direction K0, especially near the Bragg
+angle K0 = K where the form of the interference fringes is radically different from
+the hermitian case. And instead of the total power decaying exponentially, there is
+the alternating sum rule
+∞
+n=−∞
+(−1)n|An(Z)|
+2 = exp
+
+
+
+
+−QZ
+2k
+
+
+
+ . (13)
+A similar analysis [17] explores analogous phenomena in the (exactly-solvable
+potential exp(iKx).
+6 Crystal optics with absorption and chirality [18]
+In a general electrically anisotropic material (‘crystal’), two plane waves can
+travel in any direction s, with different speeds (refractive indices n±)and polarizations, specified by the (always-transverse)vectors D±. These are the eigenvalues
+and eigenvectors of the matrix m(s)consisting of the 2 × 2 part of the reciprocal
+dielectric tensor perpendicular to s [19, 20]. In the general case where the crystal
+is not only biaxially anisotropic but also absorbing (dichroic)and chiral (optically
+active, or gyrotropic), systematic consideration of nonhermitian effects, as well as
+ideas from singularity theory, provide a comprehensive description of this beautiful
+area of classical physics.
+If the biaxial crystal is transparent and non-chiral, m(s)is real symmetric
+(case a). If the crystal is biaxial, transparent and chiral, m(s)is complex hermitian
+(case b). If the crystal is biaxial absorbing and nonchiral, m(s)is complex symmetric and therefore nonhermitian (case c). And in the most general case, where the
+crystal is biaxial, absorbing and chiral, m(s)is a general nonsymmetric complex
+nonhermitian matrix (case d).
+For each case, in considering the refractive indices and polarizations as functions
+in the 2-parameter direction space (s), it is helpful to concentrate on the singularities, of which there are three types. First are the degeneracies, where n+ = n−.
+1044 Czech. J. Phys. 54 (2004)
+Physics of nonhermitian degeneracies
+In case a, these are four diabolical points (i.e. directions)in antipodal pairs, corresponding to the optic axes of a doubly refracting material, discovered by Hamilton
+and responsible for conical refraction [19]. Adding absorption (case c), causes the
+optic axes to split into two ‘singular axes’ [21], which are nonhermitian degeneracies: branch-point connections between the two eigensheets. In this case, the two
+polarizations (identical because the eigenvectors are parallel)are circular, illustrating a known theorem [22, 23]. When chirality is incorporated (case d), the singular
+axes approach each other, and the associated common polarization is elliptic rather
+than circular; eventually, the singular axes annihilate in pairs, leaving two disconnected eigensheets. Without absorption, the passage from the nonchiral case a to
+the transparent chiral case b causes the immediate destruction of the diabolical
+points, consistent with the codimensions described in Section 2 (two for diabolical
+points and three for general hermitian degeneracies).
+The second type of singularity consists of points where the polarizations are
+purely circular: C points, invented [24] for waves in position space but here occurring
+in the momentum space of directions s. These do not occur in case a, for which all
+polarizations are linear, but are present in cases (b–d). With absorption and not
+chirality (case c), the C points coincide with the degeneracies, as already mentioned.
+Adding chirality (cases d and b), the C points remain fixed as the singular axes
+(now elliptically polarized)move away and annihilate: the C points are ghosts,
+haunting the directions of the departed degeneracies. In general the C points are
+different for the two polarizations.
+The third type of singularity consists of lines in s space where the polarization
+is purely linear: L lines. These occur for cases b–d, and separate s regions of right
+and left handed elliptic polarization, containing the C points.
+Propagating through a plate of crystal, the two polarizations get out of phase.
+These phase shifts, which are functions of s, are revealed as interference fringes
+when the plate is sandwiched between crossed polarizers (e.g. linear or circular),
+and this provides a means (still to be systematically investigated experimentally)
+for detecting the three types of singularity. A curious feature of these ‘polarization
+sandwiches’ will now be described.
+7 A nontrivial square root of zero toy [25]
+A polarizing sheet is represented by a projection operator, in this case a 2 × 2
+matrix of the form
+Pu = |uu| , (14)
+where the 2-vector |u represents the state passed by the polarizer. In the sandwiches under consideration now, the ‘bread’ consists of crossed polarizer P− and
+analyzer P+ (i.e., +|− = 0). The ‘filling’ consists of the crystal slab, whose action
+on an incident polarization is represented by an evolution matrix A(s)constructed
+from the dielectric matrix m(s)described in Section 6. The complete sandwich is
+represented by the matrix
+M(s) = P+A(s)P− , (15)
+Czech. J. Phys. 54 (2004) 1045
+M.V. Berry
+and transforms incident to outgoing polarization states by
+|ψout = M(s)|ψin. (16)
+The sandwich matrices M(s)have several properties that are obvious physically
+and amusing mathematically. The matrices are nonhermitian (because of the loss
+represented by the polarizers), and degenerate, with two eigenvalues zero and the
+common eigenstate |+. Unlike a polarizer, which passes its own eigenstate and
+annihilates the orthogonal state, M(s)annihilates its own eigenstate. And it is easy
+to see from (15)and (14)that
+M(s)
+2 = 0 , (17)
+so the sandwich matrices are nontrivial square roots of zero (the trivial square root
+being the empty sandwich, for which M = 0) .
+One such sandwich, that is is very easy to construct [26], uses ordinary linear
+polarizing sheets for the polarizer and analyzer, and a sheet of plastic overheadprojector transparency foil (a biaxially anisotropic material)for the filling. The
+result (17), for the sandwich matrix M(s) , holds for all s near the forward direction, but the pattern that is seen on viewing any diffuse light (e.g. the sky)through
+the sandwich (which need be no more than 2 cm square), held obliquely immediately in front of one eye, depends sensitively on s and reveals the eigenstructure of
+the material matrix m(s)(Section 6). In particular, the degeneracy (diabolical in
+this hermitian case)appears as a ‘bull’s-eye’: the centre of a system of brilliantly
+coloured circular interference fringes, together with a black stripe through the centre that reflects the sign change (geometric phase)of the eigenvectors around the
+conical intersection. A great deal of mathematics and physics is brought to life by
+this toy: not only (17)and diabolical degeneracies and geometric phases, but also
+wave interference and its many manifestations in crystal optics. Every physicist
+should make one.
+I thank Professor Miroslav Znojil for his kind hospitality at the meeting in Prague
+when he encouraged me to write this review. My research is supported by the Royal
+Society of London.
+References
+
+
+Erratum: Supercollider physics Rev. Mod. Phys. 56, 579 (1984)
+E. Eichten
+Fermi National Accelerator Laboratory, P.O. Box 500, Batavia, illinois 80510
+l. Hinchliffe
+Lawrence Berkeley Laboratory, Berkeley, California 94720
+K. Lane
+The Ohio State University, Columbus, Ohio 43210
+C. Quigg
+Fermi National Accelerator Laboratory, P.O. Box 500, Batavia, illinois 80510
+13=[1—4zMq/Q (1—z)]' (2.40)
+Equation (2.46) should read
+xW3(x, go) =1.49x (1—x) '(1+5.86x) . (2 46)
+A programming error led to too slow a growth in the
+population of heavy flavors. At the largest values of Q,
+our structure functions underestimate the heavy quark
+content of the proton by about a factor of 2. We remark
+that near threshold the results are sensitive to the (rather
+arbitrary) choice of threshold behavior. We are grateful
+for discussions with Keith Ellis, John Collins, and Wu-Ki
+Tung which led to the discovery of this error. A perhaps
+better estimate, but one we do not completely endorse, is
+given by Collins and Tung (1986). The underestimate of
+the number of heavy quarks has very little effect on the
+rates in EHLQ. To illustrate the consequences we will
+discuss the two most sensitive observables.
+The production of a conventional or new charged intermediate boson 8'+ proceeds via the elementary reactions
+ud, cs,tb~S'+ .
+At small masses, the relevant values of s =M~ and hence
+x are small, so the process is dominated by sea quarks.
+Since the published structure functions have underestimated the cs and tb fluxes, we must expect that the production cross section has been underestimated. At larger
+masses, relevant to the search for new intermediate bosons, s and x are correspondingly larger and the ud initial
+state becomes more important since valence u quarks tend
+to dominate the u distribution. Figure A shows the cross
+section for intermediate boson production given by Set 2
+of the EHLQ structure functions compared with the cross
+section given by corrected structure functions. At
+v s =40 TeV, the cross section is increased by about 12%
+Since the publication of this paper, we have detected
+several misprints and errors. We correct them here, in the
+order in which they appear in the original paper.
+Equation (2.40) should read
+for the conventional "100 GeV/c2" intermediate boson.
+For new gauge boson masses greater than about 1
+TeV/c, the change is imperceptible.
+A quantity which is more dramatically affected by this
+error is the estimate of Higgs production via quarkantiquark fusion (see Fig. 143). The dominant contribution comes from top-antitop annihilation since the Higgs
+10
+10
+10
+10
+0.1
+I
+M(W') (TeV//c )
+10
+FICx. A. Integrated cross sections for the production of W'+
+with rapidities ~ ys i & 1.5 in proton-proton collisions at
+V s =2, 10, 20, and 40 TeV. The solid curves are calculated using the revised structure functions. Dashed curves refer to the
+published Set 2.
+Reviews of Modern Physics, Vol. 58, No. 4, October 1986 Copyright 1986 The American Physical Society
+1066 Eichten et al.: Erratum
+quark coupling is proportional to the quark mass. Consequently the rates in Fig. 143 shouM be increased by as
+much as a factor of 4. However the rates are still far
+smaller than either the gluon fusion or the W-fusion rates
+so that the total Higgs production rates shown in Figs.
+151—155 are unchanged.
+This estimate of Higgs production using quarkantiquark fusion illustrates a general pitfall in the use of
+heavy partons. The calculation just described is really an
+estimate of the process
+p +p —+H+ t+t+anything,
+where the t and t are fragments of the incoming beams.
+The approximation is valid in the region where
+M~ ~~no, . When this approximation is not valid, a better
+estimate of the cross section is obtained by considering
+the partonic process
+g+g —+H+t+t
+-1
+I I I
+10
+—I
+. 1
+10
+10
+I I I I I I I I I I I I I I I E
+(Kunszt, 1984). The cross section for this process contains a term proportional to ln( MH /m, ). Quarkantiquark fusion gives a good approximation to the physical cross section only when this logarithm is large. For
+the range of Higgs masses shown in Fig. 143, the tT-fusion
+mechanism overestimates the true rate. Indeed the numerical results given by Kunszt are closer to the values
+given in our published Fig. 143 than they are to the revised estimate based on a richer population of heavy
+quarks. It is clear that caution should be exercised when
+using the heavy-quark distributions for processes of scale
+Q when Q is not very much bigger than the quark mass.
+The estimates of charged Higgs production given in the
+Snowmass paper of Eichten et al. (1984) also are affected
+by this error. In the qq-fusion approximation the rates,
+which are dominated by tb fusion, are underestimated in
+the Snowmass report by a factor of 4 or so. Again it is
+very likely that the qq-fusion approximation significantly
+overestimates the true rate for Higgs masses of interest, so
+the published estimates provide sensible guidance.
+In summary, the most serious consequence of the defective treatment of heavy flavors is in the prediction of the
+production rate for the standard W, which is underestimated by =12%%uo at ~s =40 TeV. The effects on all
+other rates shown in EHLQ are much smaller than this.
+An improved treatment of heavy flavors will be incorporated in a new edition of the structure functions, now
+in preparation, based on new information from deeply inelastic scattering. In the meantime, revisions with the
+proper heavy flavor content are available from us upon
+request.
+There are two misprints in Table I (p. 609).
+10
+0 0.5 1 1.5 2
+p, (Tev//c)
+2.5
+FIG. 118. Differential cross section der/dpzdy ~ ~ o for the
+production of a
+8'+— as a function of the 8'+— transverse
+momentum (pj ), at V s =2, 10, 20, 40, 70, and 100 TeV. Set 2
+of distributions was used.
+Line 1: F(p;,pj,p;,pz, p3) should read F(p;,p~,pt,
+pz~ps).
+Line 3: F(p;,p2, —pt, —pz,p3) should read F(p;,
+P2~P t ~ PJ'&P—3 ). —
+The computation of the transverse momentum distribution for 8'—presented in Fig. 118 is slightly in error. A
+corrected figure is included. The changes do not affect
+any conclusions.
+In Eqs. (4.52), (4.55), and (4.56), P, should read P~, and
+Eq. (4.53) is redundant. In addition, in Eq. (4.56) yb„„
+should read ~ yb„„~.
+Equations (4.60) and (4.64) were improperly transcribed. In Eq. (4.60), first line, (8x~—6) should read
+(8x~—6)/4. Below (4.60), replace "The cross section. ..
+"
+and (4.61) by "The expression for the cross section to produce a W+—Z pair of mass ~=V sr such that both intermediate bosons lie in the rapidity interval (—I;F) is
+complicated because of the unequal masses of W and Z.
+It has the form
+do(ah~W~Z .+anything) 2A &
+r
+d ~f ~, ~( ~Q)f(b)( ~Q)g ( ) j d~ l,J
+(4.61)
+For 8' —+Z production with yb„„&0, the integrated elementary cross section is
+Rev. Mod. Phys. , Vol. 58, No. 4, October 1986
+Eichten et af.: Erratum 1067
+'
+0 da(q-q —+W~Z )
+Z] dz
+where. . . .
+"
+Replace (4.64) by
+ma piU&i (9—8xw)P (zo 4-zi —zo/3 —z i/3)
++ (8x w —6)e'(zo+z i )
+6xws 8(1—Mw/s) 4
+1 s +MwMz/s + 2
+(LJ E. (o L; )L o)—)+(L; LJ. )— (zp+z~)
+1—Mw/s . P 4
+p(zo —z& )
+2 2 —(L;+LJ)
+1 2(1 e') 4MwMz(zp+z) )/s
+LJ (zp+z, )— I io+ 8(1—xw) (1—c.
+'—Pzp)(1 —E'+Pz) )
+2(1—e') 4MwMz(zp+z~ )/s
+&oi+
+LtLJe'( I ip+ )Lpi) + 2(1—xw)P(1 —e')
+(4.64)
+Equation (4.65) should read
+e'= (Mw+Mz )/s . (4.65)
+I
+is treated by Chanowitz, Furman, and Hinchliffe (1979).
+Equation (5.2) should read
+Replace (4.66) by
+T
+1—e'+Pz(
+&)p ——ln '
+1—e' —Pzp
+1—E'+Pzo
+E. p] ——ln
+1—e' —Pz)
+In (4.67), replace yb»„by ~ yb«„~, and add the definitions
+z& ——min(1, (1/pz) tanh(E' —~yb«„~ ),
+(1/Pw) tanh(Y'+ ~yb«„~ )),
+Mz —Mg 2 2
+1+
+p3 2
+etM (M Mz)(1 2xw)(Lq+Rq) + 2 2 2 2 2 4 4xw(1 —xw)[(M —Mz) +MzI z]
+M (1 2x w ) (Lq +Rq )
+32xw(1 xw) [(M M—z) +MzI z—]
+Some brackets are missing in Eq. (5.17):
+3( t —Mg )(u —Mg )+Mg (u —t )
+should read
+(5 2)
+In (4.74), replace yb „by ~ yb«s, ~
+.
+Equations (4.86) and (4.87) should be multiplied by a
+factor (1 4m /MH)'~ . —
+On page 637, column 2, line 3, "factor of 4" should
+read "factor of 1.2."
+The limits given in Sec. V.A are appropriate in case the
+mass of one member of an SU(2)J doublet is negligible
+vnth respect to the mass of its partner. The general case
+3[(t Mg)(u —Mg=)+Mg(u —t)] .
+On page 645, column 2, above Eq. (5.27), the kinematical suppression factor quoted is correct only for the vector part of the interaction, and does not apply for the axial vector couplings of the virtual Z . The Drell-Yan
+cross section for production of a pair of heavy leptons is
+given by (4.12), with
+Rev. Mod. Phys. , Vol. 58, No. 4, October 1986
+Eichten et al.: Erratum
+P(3 ~~) e,.M2(M~ —Mz)(1. ++ )(I ++ ) ~M~(L, ++ )[(3—~ )(L~++~) +2~
+2
+'
+Sx~(1 x—g )[(M M—z) +Mzl z] 256x'(1 —x )'[(M' M,')'+Mzrz]
+where
+p=(1—4ML /M )'/
+(Willenbrock and Dicus, 1985), which reduces to (4.14) in
+the limit P—&1. This results in a reduction of the cross
+sections shown in Figs. 166 and 167 by about 30%, to the
+values shown in the corrected figures. We thank Scott
+W'illenbrock and Duane Dicus for informing us of this
+blunder. The same misstatement appears on page 621,
+column 1, first paragraph. This error does not affect the
+quoted discovery limits for heavy leptons, which are controlled by the process
+p +p ~I.+%+anything,
+as discussed on p. 647.
+On page 655, column 1, above Eq. (6.34) gETc~GTc
+should read GETc—+GTC
+On page 657, column 1, the second entry in Eq. (6.40)
+should read M(I's)=, not M(I'3)=. .
+. In Eq.
+(6.42), the second entry should read q q+ .
+Some of the curves in Figs. 242—249 are improperly labeled. In Figs. 242 and 246,
+10~7.5,
+15—+10,
+20—+15 .
+In Figs. 243 and 247, 7.5—+10; in Figs. 244 and 248,
+10—+15; in Figs. 245 and 249, 15~20. %"e thank Jack
+Gunion for calling these to our attention. The "reach"
+figures 250 and 251 are unchanged. In the caption to Fig.
+250, pp should read pp. In Fig. 251, the ordinate label 60
+should read 50.
+The changes in the treatment of heavy flavors discussed
+above lead to changes in the parametrizations of structure
+functions given in the Appendix:
+11.4283 becomes 11.5528
+8.06604 becomes 8. 1905
+Revised Tables XIH—XVI appear below.
+It will be observed that the coefficients for the light flavors, u„d„u„G, and s, have changed slightly from the
+values given in the original publication. There are two
+reasons for this. Changes in the heavy-quark distribution
+have some small effect on the gluon distribution and the

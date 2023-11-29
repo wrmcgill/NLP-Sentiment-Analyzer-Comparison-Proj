@@ -3,15 +3,11 @@ import nltk
 nltk.download('punkt')
 from textblob import TextBlob
 
-url = "https://en.wikipedia.org/wiki/Donald_A._Morgan"
+file_path = "Negative_review_data.txt"
 
-article = Article(url)
+with open(file_path, 'r', encoding='utf-8') as file:
+    text = file.read()
 
-article.download()
-article.parse()
-article.nlp()
-
-text = article.summary
 
 blob = TextBlob(text)
 
