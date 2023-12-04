@@ -10,8 +10,7 @@ def analyze_sentiment(sentence):
     print(f"{sentence} - {sentiment_dict}")
 
 # Read the text file and analyze each sentence
-with open('test.txt', 'r') as file:
-    for line in file:
+with open('Neutral_study_data.txt', 'r') as file:
         analyze_sentiment(line.strip())  # Stripping to remove leading/trailing whitespace
         
         
